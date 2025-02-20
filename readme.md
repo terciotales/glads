@@ -6,7 +6,7 @@ Glads é um plugin para WordPress que permite a gestão e exibição de anúncio
 
 1. Clone o repositório na pasta de plugins do seu WordPress:
    ```sh
-   git clone https://github.com/seuusuario/glads.git wp-content/plugins/glads
+   git clone https://github.com/terciotales/glads.git wp-content/plugins/glads
    ```
 2. Ative o plugin no painel do WordPress em **Plugins > Glads**.
 
