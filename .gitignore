@@ -1,0 +1,10 @@
+/idea/
+/vendor/
+/bundle/
+node_modules
+log.txt
+/yarn-error.log
+.editorconfig
+package-lock.json
+composer.lock
+yarn.lock
