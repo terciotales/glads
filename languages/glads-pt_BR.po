@@ -154,49 +154,49 @@ msgstr "Tipo de Post para Anúncios"
 
 #: includes/class-glads-taxonomy.php:38
 msgctxt "taxonomy general name"
-msgid "Ad Positions"
-msgstr "Posições dos Anúncios"
+msgid "Ad Areas"
+msgstr "Áreas de Anúncios"
 
 #: includes/class-glads-taxonomy.php:39
 msgctxt "taxonomy singular name"
-msgid "Ad Position"
-msgstr "Posição do Anúncio"
+msgid "Ad Area"
+msgstr "Área de Anúncio"
 
 #: includes/class-glads-taxonomy.php:40
-msgid "Search Ad Positions"
-msgstr "Buscar Posições de Anúncios"
+msgid "Search Ad Areas"
+msgstr "Buscar Áreas de Anúncios"
 
 #: includes/class-glads-taxonomy.php:41
-msgid "All Ad Positions"
-msgstr "Todas as Posições de Anúncios"
+msgid "All Ad Areas"
+msgstr "Todas as Áreas de Anúncios"
 
 #: includes/class-glads-taxonomy.php:42
-msgid "Parent Ad Position"
-msgstr "Posição de Anúncio Pai"
+msgid "Parent Ad Area"
+msgstr "Área de Anúncio Pai"
 
 #: includes/class-glads-taxonomy.php:43
-msgid "Parent Ad Position:"
-msgstr "Posição de Anúncio Pai:"
+msgid "Parent Ad Area:"
+msgstr "Área de Anúncio Pai:"
 
 #: includes/class-glads-taxonomy.php:44
-msgid "Edit Ad Position"
-msgstr "Editar Posição de Anúncio"
+msgid "Edit Ad Area"
+msgstr "Editar Área de Anúncio"
 
 #: includes/class-glads-taxonomy.php:45
-msgid "Update Ad Position"
-msgstr "Atualizar Posição de Anúncio"
+msgid "Update Ad Area"
+msgstr "Atualizar Área de Anúncio"
 
 #: includes/class-glads-taxonomy.php:46
-msgid "Add New Ad Position"
-msgstr "Adicionar Nova Posição de Anúncio"
+msgid "Add New Ad Area"
+msgstr "Adicionar Nova Área de Anúncio"
 
 #: includes/class-glads-taxonomy.php:47
-msgid "New Ad Position Name"
-msgstr "Nome da Nova Posição de Anúncio"
+msgid "New Ad Area Name"
+msgstr "Nome da Nova Área de Anúncio"
 
 #: includes/class-glads-taxonomy.php:48
-msgid "Ad Positions"
-msgstr "Posições de Anúncios"
+msgid "Ad Areas"
+msgstr "Áreas de Anúncios"
 
 #: dist/blocks/ad/block.json src/blocks/ad/block.json
 msgctxt "block title"

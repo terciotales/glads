@@ -35,17 +35,17 @@ class Glads_Taxonomy {
      */
     public function register_taxonomy() {
         $labels = array(
-            'name'              => _x('Ad Positions', 'taxonomy general name', 'glads'),
-            'singular_name'     => _x('Ad Position', 'taxonomy singular name', 'glads'),
-            'search_items'      => __('Search Ad Positions', 'glads'),
-            'all_items'         => __('All Ad Positions', 'glads'),
-            'parent_item'       => __('Parent Ad Position', 'glads'),
-            'parent_item_colon' => __('Parent Ad Position:', 'glads'),
-            'edit_item'         => __('Edit Ad Position', 'glads'),
-            'update_item'       => __('Update Ad Position', 'glads'),
-            'add_new_item'      => __('Add New Ad Position', 'glads'),
-            'new_item_name'     => __('New Ad Position Name', 'glads'),
-            'menu_name'         => __('Ad Positions', 'glads'),
+            'name'              => _x('Ad Areas', 'taxonomy general name', 'glads'),
+            'singular_name'     => _x('Ad Area', 'taxonomy singular name', 'glads'),
+            'search_items'      => __('Search Ad Areas', 'glads'),
+            'all_items'         => __('All Ad Areas', 'glads'),
+            'parent_item'       => __('Parent Ad Area', 'glads'),
+            'parent_item_colon' => __('Parent Ad Area:', 'glads'),
+            'edit_item'         => __('Edit Ad Area', 'glads'),
+            'update_item'       => __('Update Ad Area', 'glads'),
+            'add_new_item'      => __('Add New Ad Area', 'glads'),
+            'new_item_name'     => __('New Ad Area Name', 'glads'),
+            'menu_name'         => __('Ad Areas', 'glads'),
         );
 
         $args = array(
@@ -54,10 +54,10 @@ class Glads_Taxonomy {
             'show_ui'           => true,
             'show_admin_column' => true,
             'query_var'         => true,
-            'rewrite'           => array('slug' => 'ad-position'),
+            'rewrite'           => array('slug' => 'ad-area'),
         );
 
-        register_taxonomy('ad_position', array('post'), $args);
+        register_taxonomy('ad_area', array('post'), $args);
     }
 
 }
