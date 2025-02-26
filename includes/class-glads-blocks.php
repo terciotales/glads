@@ -17,7 +17,7 @@
  * @subpackage Glads/includes
  * @author     Tércio Tales <terciotalesb@gmail.com>
  */
-class Glads_Block {
+class Glads_Blocks {
 
     /**
      * Register the block with WordPress.
@@ -39,33 +39,5 @@ class Glads_Block {
             return;
         }
 
-        // Register the block script
-        wp_register_script(
-            'glads-block',
-            plugins_url('js/glads-block.js', __FILE__),
-            array('wp-blocks', 'wp-element', 'wp-editor'),
-            filemtime(plugin_dir_path(__FILE__) . 'js/glads-block.js')
-        );
-
-        // Register the block type
-        register_block_type('glads/block', array(
-            'editor_script' => 'glads-block',
-            'render_callback' => array($this, 'render_block'),
-        ));
     }
-
-    /**
-     * Render the block.
-     *
-     * @since    1.0.0
-     * @param    array $attributes Block attributes.
-     * @return   string            Block output.
-     */
-    public function render_block($attributes) {
-        // Output for the block
-        $output = '';
-
-        return $output;
-    }
-
 }

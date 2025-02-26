@@ -1,0 +1,105 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "glads/ad",
+    "title": "Glads Ad",
+    "category": "glads",
+    "version": "1.0.0",
+    "description": "A block to display ads.",
+    "textdomain": "glads",
+    "attributes": {
+        "model": {
+            "type": "string",
+            "default": "grid"
+        },
+        "gallery": {
+            "type": "string",
+            "default": ""
+        },
+        "sliderPosition": {
+            "type": "string",
+            "default": "left"
+        },
+        "delay": {
+            "type": "number",
+            "default": 5
+        },
+        "autoplay": {
+            "type": "boolean",
+            "default": true
+        },
+        "enableArrow": {
+            "type": "boolean",
+            "default": false
+        },
+        "arrowIcon": {
+            "type": "string",
+            "default": null
+        },
+        "fixedBanner": {
+            "type": "string",
+            "default": null
+        },
+        "directionArrow": {
+            "type": "string",
+            "default": "right-bottom"
+        },
+        "containerPosition": {
+            "type": "integer",
+            "default": 1
+        },
+        "alignContent": {
+            "type": "string",
+            "default": "center"
+        },
+        "label": {
+            "type": "string",
+            "default": "CONHEÇA NOSSA CIDADE"
+        },
+        "title": {
+            "type": "string",
+            "default": "Conheça nossa cidade e se encante com suas belezas"
+        },
+        "description": {
+            "type": "string",
+            "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        },
+        "widthContent": {
+            "type": "string",
+            "default": "430px"
+        },
+        "height": {
+            "type": "string",
+            "default": "430px"
+        },
+        "buttonText": {
+            "type": "string",
+            "default": "Saiba Mais"
+        },
+        "link": {
+            "type": "string",
+            "default": ""
+        },
+        "target": {
+            "type": "boolean",
+            "default": true
+        },
+        "clientId": {
+            "type": "string",
+            "default": ""
+        },
+        "abas": {
+            "type": "array",
+            "default": [
+                {
+                    "teste": "opa",
+                    "outro": "outro"
+                }
+            ]
+        }
+    },
+    "editorScript": "file:./index.js",
+    "editorStyle": "file:./index.css",
+    "style": "file:./style-index.css",
+    "viewScript": "file:./view.js"
+}
