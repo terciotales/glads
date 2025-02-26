@@ -27,5 +27,5 @@ Sinta-se à vontade para contribuir com melhorias e correções. Abra uma issue 
 
 ## Licença
 
-Este projeto está licenciado sob a [MIT License](LICENSE).
+Este projeto está licenciado sob a [GPL-2.0 License](LICENSE).
 
