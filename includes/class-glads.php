@@ -112,6 +112,26 @@ class Glads {
         require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-glads-i18n.php';
 
         /**
+         * The class responsible for defining custom taxonomies.
+         */
+        require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-glads-taxonomy.php';
+
+        /**
+         * The class responsible for defining custom post types.
+         */
+        require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-glads-posttype.php';
+
+        /**
+         * The class responsible for defining shortcodes.
+         */
+        require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-glads-shortcode.php';
+
+        /**
+         * The class responsible for defining blocks.
+         */
+        require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-glads-blocks.php';
+
+        /**
          * The class responsible for defining all actions that occur in the admin area.
          */
         require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-glads-admin.php';
@@ -123,7 +143,6 @@ class Glads {
         require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-glads-public.php';
 
         $this->loader = new Glads_Loader();
-
     }
 
     /**
@@ -156,7 +175,6 @@ class Glads {
 
         $this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
         $this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
-
     }
 
     /**
@@ -182,6 +200,12 @@ class Glads {
      */
     public function run() {
         $this->loader->run();
+
+        // Load all dependencies
+        new Glads_Taxonomy();
+        new Glads_PostType();
+        new Glads_Shortcode();
+        new Glads_Blocks();
     }
 
     /**
