@@ -13,16 +13,19 @@ const customRules = defaultConfig.module.rules.map((item) => {
 
 module.exports = {
 	...defaultConfig,
-	entry: Object.assign(
-		{
-			admin: path.resolve(__dirname, 'src/admin/index.js'),
-			'editor': path.resolve(__dirname, 'src/editor/index.js'),
-			public: path.resolve(__dirname, 'src/public/index.js'),
-		},
-	),
+	entry: {
+		...defaultConfig.entry,
+		'glads-admin': glob.sync('./assets/admin/js/*.js'),
+		'glads-public': glob.sync('./assets/public/js/*.js'),
+		'glads-admin-style': glob.sync('./assets/admin/css/*.scss'),
+		'glads-public-style': glob.sync('./assets/public/css/*.scss'),
+		'glads-ad-block': glob.sync('./includes/blocks/ad/index.js'),
+		'glads-ad-block-view': glob.sync('./includes/blocks/ad/view.js'),
+		'glads-ad-block-view-style': glob.sync('./includes/blocks/ad/style.scss'),
+	},
 	output: {
 		...defaultConfig.output,
-		path: path.resolve(__dirname, 'bundle'),
+		path: path.resolve(__dirname, 'dist'),
 		publicPath: './',
 	},
 	module: {
