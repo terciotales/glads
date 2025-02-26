@@ -35,6 +35,16 @@ if ( ! defined( 'WPINC' ) ) {
 define( 'GLADS_VERSION', '1.0.0' );
 
 /**
+ * Get the absolute path to the plugin directory.
+ */
+define( 'GLADS_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
+
+/**
+ * Get the URL to the plugin directory.
+ */
+define( 'GLADS_PLUGIN_DIR_URL', plugin_dir_url( __FILE__ ) );
+
+/**
  * The code that runs during plugin activation.
  * This action is documented in includes/class-glads-activator.php
  */
@@ -71,10 +81,8 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-glads.php';
  * @since    1.0.0
  */
 function run_glads() {
-
     $plugin = new Glads();
     $plugin->run();
-
 }
 
 run_glads();

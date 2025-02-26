@@ -4,209 +4,206 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Glads - WordPress Ad Manager 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/glads\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2025-02-26T17:01:56-03:00\n"
+"PO-Revision-Date: 2025-02-26 17:14-0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-02-26T17:01:49-03:00\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.9.0\n"
+"X-Generator: Poedit 3.5\n"
 "X-Domain: glads\n"
 
 #. Plugin Name of the plugin
 msgid "Glads - WordPress Ad Manager"
-msgstr ""
+msgstr "Glads - Gerenciador de Anúncios para WordPress"
 
 #. Plugin URI of the plugin
 msgid "https://github.com/terciotales/glads"
-msgstr ""
+msgstr "https://github.com/terciotales/glads"
 
 #. Description of the plugin
 msgid "A simple ad manager for WordPress."
-msgstr ""
+msgstr "Um gerenciador de anúncios simples para WordPress."
 
-#. Author of the plugin
 msgid "Tércio Tales"
-msgstr ""
+msgstr "Tércio Tales"
 
 #. Author URI of the plugin
 msgid "https://github.com/terciotales"
-msgstr ""
+msgstr "https://github.com/terciotales"
 
 #: includes/class-glads-blocks.php:53
 msgid "Glads"
-msgstr ""
+msgstr "Glads"
 
 #: includes/class-glads-posttype.php:38
 msgctxt "Post Type General Name"
 msgid "Ads"
-msgstr ""
+msgstr "Anúncios"
 
 #: includes/class-glads-posttype.php:39
 msgctxt "Post Type Singular Name"
 msgid "Ad"
-msgstr ""
+msgstr "Anúncio"
 
 #: includes/class-glads-posttype.php:40
 msgid "Ads"
-msgstr ""
+msgstr "Anúncios"
 
-#: includes/class-glads-posttype.php:41
-#: includes/class-glads-posttype.php:68
+#: includes/class-glads-posttype.php:41 includes/class-glads-posttype.php:68
 msgid "Ad"
-msgstr ""
+msgstr "Anúncio"
 
 #: includes/class-glads-posttype.php:42
 msgid "Ad Archives"
-msgstr ""
+msgstr "Arquivos de Anúncios"
 
 #: includes/class-glads-posttype.php:43
 msgid "Ad Attributes"
-msgstr ""
+msgstr "Atributos do Anúncio"
 
 #: includes/class-glads-posttype.php:44
 msgid "Parent Ad:"
-msgstr ""
+msgstr "Anúncio Pai:"
 
 #: includes/class-glads-posttype.php:45
 msgid "All Ads"
-msgstr "T"
+msgstr "Todos os Anúncios"
 
 #: includes/class-glads-posttype.php:46
 msgid "Add New Ad"
-msgstr ""
+msgstr "Adicionar Novo Anúncio"
 
 #: includes/class-glads-posttype.php:47
 msgid "Add New"
-msgstr ""
+msgstr "Adicionar Novo"
 
 #: includes/class-glads-posttype.php:48
 msgid "New Ad"
-msgstr ""
+msgstr "Novo Anúncio"
 
 #: includes/class-glads-posttype.php:49
 msgid "Edit Ad"
-msgstr ""
+msgstr "Editar Anúncio"
 
 #: includes/class-glads-posttype.php:50
 msgid "Update Ad"
-msgstr ""
+msgstr "Atualizar Anúncio"
 
 #: includes/class-glads-posttype.php:51
 msgid "View Ad"
-msgstr ""
+msgstr "Ver Anúncio"
 
 #: includes/class-glads-posttype.php:52
 msgid "View Ads"
-msgstr ""
+msgstr "Ver Anúncios"
 
 #: includes/class-glads-posttype.php:53
 msgid "Search Ad"
-msgstr ""
+msgstr "Buscar Anúncio"
 
 #: includes/class-glads-posttype.php:54
 msgid "Not found"
-msgstr ""
+msgstr "Não encontrado"
 
 #: includes/class-glads-posttype.php:55
 msgid "Not found in Trash"
-msgstr ""
+msgstr "Não encontrado no Lixo"
 
 #: includes/class-glads-posttype.php:56
 msgid "Featured Image"
-msgstr ""
+msgstr "Imagem Destacada"
 
 #: includes/class-glads-posttype.php:57
 msgid "Set featured image"
-msgstr ""
+msgstr "Definir imagem destacada"
 
 #: includes/class-glads-posttype.php:58
 msgid "Remove featured image"
-msgstr ""
+msgstr "Remover imagem destacada"
 
 #: includes/class-glads-posttype.php:59
 msgid "Use as featured image"
-msgstr ""
+msgstr "Usar como imagem destacada"
 
 #: includes/class-glads-posttype.php:60
 msgid "Insert into ad"
-msgstr ""
+msgstr "Inserir no anúncio"
 
 #: includes/class-glads-posttype.php:61
 msgid "Uploaded to this ad"
-msgstr ""
+msgstr "Enviado para este anúncio"
 
 #: includes/class-glads-posttype.php:62
 msgid "Ads list"
-msgstr ""
+msgstr "Lista de anúncios"
 
 #: includes/class-glads-posttype.php:63
 msgid "Ads list navigation"
-msgstr ""
+msgstr "Navegação da lista de anúncios"
 
 #: includes/class-glads-posttype.php:64
 msgid "Filter ads list"
-msgstr ""
+msgstr "Filtrar lista de anúncios"
 
 #: includes/class-glads-posttype.php:69
 msgid "Post Type for Ads"
-msgstr ""
+msgstr "Tipo de Post para Anúncios"
 
 #: includes/class-glads-taxonomy.php:38
 msgctxt "taxonomy general name"
 msgid "Ad Positions"
-msgstr ""
+msgstr "Posições dos Anúncios"
 
 #: includes/class-glads-taxonomy.php:39
 msgctxt "taxonomy singular name"
 msgid "Ad Position"
-msgstr ""
+msgstr "Posição do Anúncio"
 
 #: includes/class-glads-taxonomy.php:40
 msgid "Search Ad Positions"
-msgstr ""
+msgstr "Buscar Posições de Anúncios"
 
 #: includes/class-glads-taxonomy.php:41
 msgid "All Ad Positions"
-msgstr ""
+msgstr "Todas as Posições de Anúncios"
 
 #: includes/class-glads-taxonomy.php:42
 msgid "Parent Ad Position"
-msgstr ""
+msgstr "Posição de Anúncio Pai"
 
 #: includes/class-glads-taxonomy.php:43
 msgid "Parent Ad Position:"
-msgstr ""
+msgstr "Posição de Anúncio Pai:"
 
 #: includes/class-glads-taxonomy.php:44
 msgid "Edit Ad Position"
-msgstr ""
+msgstr "Editar Posição de Anúncio"
 
 #: includes/class-glads-taxonomy.php:45
 msgid "Update Ad Position"
-msgstr ""
+msgstr "Atualizar Posição de Anúncio"
 
 #: includes/class-glads-taxonomy.php:46
 msgid "Add New Ad Position"
-msgstr ""
+msgstr "Adicionar Nova Posição de Anúncio"
 
 #: includes/class-glads-taxonomy.php:47
 msgid "New Ad Position Name"
-msgstr ""
+msgstr "Nome da Nova Posição de Anúncio"
 
 #: includes/class-glads-taxonomy.php:48
 msgid "Ad Positions"
-msgstr ""
+msgstr "Posições de Anúncios"
 
-#: dist/blocks/ad/block.json
-#: src/blocks/ad/block.json
+#: dist/blocks/ad/block.json src/blocks/ad/block.json
 msgctxt "block title"
 msgid "Glads Ad"
-msgstr ""
+msgstr "Anúncio Glads"
 
-#: dist/blocks/ad/block.json
-#: src/blocks/ad/block.json
+#: dist/blocks/ad/block.json src/blocks/ad/block.json
 msgctxt "block description"
 msgid "A block to display ads."
-msgstr ""
+msgstr "Um bloco para exibir anúncios."

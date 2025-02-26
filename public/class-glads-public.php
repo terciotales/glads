@@ -73,7 +73,7 @@ class Glads_Public {
          * class.
          */
 
-        wp_enqueue_style( $this->glads, plugin_dir_url( __FILE__ ) . 'css/glads-public.css', array(), $this->version, 'all' );
+        wp_enqueue_style( $this->glads, GLADS_PLUGIN_DIR_URL . 'dist/public.css', array(), $this->version, 'all' );
 
     }
 
@@ -96,7 +96,7 @@ class Glads_Public {
          * class.
          */
 
-        wp_enqueue_script( $this->glads, plugin_dir_url( __FILE__ ) . 'js/glads-public.js', array( 'jquery' ), $this->version, false );
+        wp_enqueue_script( $this->glads, GLADS_PLUGIN_DIR_URL . 'dist/public.js', array( 'jquery' ), $this->version, false );
 
     }
 

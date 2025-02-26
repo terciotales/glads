@@ -73,7 +73,7 @@ class Glads_Admin {
          * class.
          */
 
-        wp_enqueue_style( $this->glads, plugin_dir_url( __FILE__ ) . 'css/glads-admin.css', array(), $this->version, 'all' );
+        wp_enqueue_style( $this->glads, GLADS_PLUGIN_DIR_URL . 'dist/admin.css', array(), $this->version, 'all' );
 
     }
 
@@ -96,7 +96,7 @@ class Glads_Admin {
          * class.
          */
 
-        wp_enqueue_script( $this->glads, plugin_dir_url( __FILE__ ) . 'js/glads-admin.js', array( 'jquery' ), $this->version, false );
+        wp_enqueue_script( $this->glads, GLADS_PLUGIN_DIR_URL . 'dist/admin.js', array( 'jquery' ), $this->version, false );
 
     }
 
