@@ -16,11 +16,12 @@ module.exports = {
 		...defaultConfig.entry,
 		admin: path.resolve( __dirname, 'src/admin/index.js' ),
 		public: path.resolve( __dirname, 'src/public/index.js' ),
+		['blocks/ad/index']: path.resolve( __dirname, 'src/blocks/ad/index.js' ),
+		['blocks/ad/view']: path.resolve( __dirname, 'src/blocks/ad/view.js' ),
 	},
 	output: {
 		...defaultConfig.output,
 		path: path.resolve(process.cwd(), 'dist'),
-		publicPath: './',
 	},
 	module: {
 		...defaultConfig.module,
