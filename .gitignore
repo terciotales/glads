@@ -1,6 +1,6 @@
 /idea/
 /vendor/
-/bundle/
+/dist/
 node_modules
 log.txt
 /yarn-error.log
