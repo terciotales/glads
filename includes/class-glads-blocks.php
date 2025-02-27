@@ -26,8 +26,6 @@ class Glads_Blocks {
             'ad',
         );
 
-
-
         foreach ( $blocks as $block ) {
             register_block_type(
                 GLADS_PLUGIN_DIR . 'dist/blocks/' . $block
@@ -40,6 +38,7 @@ class Glads_Blocks {
      *
      * @param array $categories Categorias existentes do editor.
      * @param WP_Post $post Objeto do post.
+     *
      * @return array Categorias modificadas com a nova categoria "Glads".
      *
      * @since 1.0.0
