@@ -20,9 +20,15 @@
 class Glads_Taxonomy {
 
     /**
-     * Register the taxonomy with WordPress.
+     * Initialize hooks and actions for the custom taxonomy functionalities.
      *
-     * @since    1.0.0
+     * This constructor sets up the necessary actions and filters for:
+     * - Registering the taxonomy.
+     * - Adding and editing custom fields for the taxonomy.
+     * - Saving and validating custom field values.
+     * - Modifying and populating custom columns in the taxonomy admin table.
+     *
+     * @return void
      */
     public function __construct() {
         add_action('init', array($this, 'register_taxonomy'));
@@ -35,6 +41,10 @@ class Glads_Taxonomy {
         add_action('created_ad_area', array($this, 'save_taxonomy_meta'), 10, 1);
         add_action('edited_ad_area', array($this, 'save_taxonomy_meta'), 10, 1);
         add_filter('pre_insert_term', array($this, 'validate_taxonomy_meta'), 10, 2);
+
+        // Modify and populate custom columns in the taxonomy admin table.
+        add_filter('manage_edit-ad_area_columns', array($this, 'modify_taxonomy_columns'));
+        add_filter('manage_ad_area_custom_column', array($this, 'populate_taxonomy_columns'), 10, 3);
 
     }
 
@@ -154,4 +164,49 @@ class Glads_Taxonomy {
         }
     }
 
+    /**
+     * Modifica as colunas da listagem da taxonomia no admin, exibindo o tamanho após o nome.
+     *
+     * @param array $columns As colunas padrão.
+     * @return array As colunas modificadas.
+     */
+    public function modify_taxonomy_columns($columns) {
+        // Remove a coluna "Descrição"
+        unset($columns['description']);
+
+        // Cria um array vazio para reorganizar as colunas
+        $new_columns = [];
+
+        foreach ($columns as $key => $label) {
+            // Adiciona a coluna "Nome"
+            $new_columns[$key] = $label;
+
+            // Insere a nova coluna "Size" logo após "Nome"
+            if ($key === 'name') {
+                $new_columns['ad_area_size'] = __('Size', 'glads');
+            }
+        }
+
+        return $new_columns;
+    }
+
+    /**
+     * Popula os valores das novas colunas na listagem da taxonomia.
+     *
+     * @param string $content O conteúdo da coluna atual.
+     * @param string $column_name O nome da coluna atual.
+     * @param int $term_id O ID do termo atual.
+     * @return string O conteúdo modificado para exibição.
+     */
+    public function populate_taxonomy_columns($content, $column_name, $term_id) {
+        if ($column_name === 'ad_area_size') {
+            // Resgata o valor do metadado "ad_area_size" para o termo
+            $ad_area_size = get_term_meta($term_id, 'ad_area_size', true);
+
+            // Exibe o tamanho ou uma mensagem padrão caso esteja vazio
+            $content = !empty($ad_area_size) ? esc_html($ad_area_size) : __('No size set', 'glads');
+        }
+
+        return $content;
+    }
 }
